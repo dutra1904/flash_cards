@@ -1,0 +1,77 @@
+/* Corpo e layout básico */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #7a4f98, #9b4d98); /* Gradiente roxo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #9b4d98;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #7a4f98;
+}
+
+/* Tela inicial (menu de escolha) */
+#main-menu {
+  display: block;
+}
+
+/* Jogo de flashcards */
+#flashcard-game {
+  display: none;
+}
+
+/* Adicionar flashcards */
+#add-card-container {
+  display: none;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #7a4f98;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #9b4d98;
+}
