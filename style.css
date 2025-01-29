@@ -1,77 +1,147 @@
-/* Corpo e layout básico */
+/* Estilos Gerais */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #7a4f98, #9b4d98); /* Gradiente roxo */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #fff;
-}
-
-.container {
-  background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  color: #333;
   text-align: center;
-  width: 300px;
-  backdrop-filter: blur(10px);
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  color: #4b0082; /* Cor roxa */
 }
 
-button {
-  padding: 10px;
-  border: none;
-  background: #9b4d98;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 10px;
-  font-size: 1rem;
+/* Contêiner principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-button:hover {
-  background: #7a4f98;
-}
-
-/* Tela inicial (menu de escolha) */
+/* Tela Principal */
 #main-menu {
   display: block;
 }
 
-/* Jogo de flashcards */
+/* Tela de jogo */
 #flashcard-game {
   display: none;
 }
 
-/* Adicionar flashcards */
+.hidden {
+  display: none;
+}
+
+.flashcard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4b0082; /* Cor roxa */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a1d98; /* Cor roxa mais intensa */
+}
+
+button:active {
+  transform: scale(0.98); /* Efeito de clique */
+}
+
+/* Botões de Alternativa */
+#answers button {
+  background-color: #ddd;
+  color: #333;
+  padding: 12px 20px;
+  margin: 5px;
+  font-size: 16px;
+  width: 70%; /* Ajuste para não ocupar toda a largura */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#answers button:hover {
+  background-color: #b3b3b3; /* Cor mais escura no hover */
+}
+
+#answers button:active {
+  transform: scale(0.97); /* Efeito de clique nas alternativas */
+}
+
+/* Botões de Controle (Next, Reset, etc.) */
+#next, #results, #reset, #shuffle, #more-info, #back-to-menu-game, #back-to-main {
+  background-color: #ff5722; /* Cor laranja para destaque */
+  padding: 15px 25px;
+  font-size: 18px;
+  width: 50%; /* Botões maiores */
+  font-weight: bold;
+}
+
+#next:hover, #results:hover, #reset:hover, #shuffle:hover, #more-info:hover, #back-to-menu-game:hover, #back-to-main:hover {
+  background-color: #e64a19; /* Laranja mais intenso no hover */
+}
+
+#next:active, #results:active, #reset:active, #shuffle:active, #more-info:active, #back-to-menu-game:active, #back-to-main:active {
+  transform: scale(0.98); /* Efeito de clique mais forte */
+}
+
+/* Estilo do Feedback */
+#feedback {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Tela de adicionar flashcard */
 #add-card-container {
   display: none;
 }
 
-form input, form textarea, form button {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
 form button {
-  background-color: #7a4f98;
+  background-color: #4b0082;
   color: white;
-  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin: 10px 0;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #9b4d98;
+  background-color: #6a1d98;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+/* Estilos do botão de voltar */
+#back-to-main, #back-to-menu-game {
+  background-color: #388e3c; /* Verde para voltar */
+  font-size: 18px;
+}
+
+#back-to-main:hover, #back-to-menu-game:hover {
+  background-color: #2c6b31; /* Verde mais escuro no hover */
+}
+
+#back-to-main:active, #back-to-menu-game:active {
+  transform: scale(0.98);
 }
