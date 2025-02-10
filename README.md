@@ -2,6 +2,8 @@
 
 FlashCards App is a web application designed to help users review and test their knowledge on various subjects using flashcards. Users can create custom flashcards, play through them by answering questions, and keep track of their progress.
 
+`obs:as primeiras três perguntas vão sempre aparecer ,mas logo em segida está sua pergunta criada`
+
 ![image](https://github.com/user-attachments/assets/e13f9f8e-27c1-4857-8b9e-6e76adcb973e)
 
 
