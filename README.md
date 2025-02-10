@@ -2,18 +2,30 @@
 
 FlashCards App is a web application designed to help users review and test their knowledge on various subjects using flashcards. Users can create custom flashcards, play through them by answering questions, and keep track of their progress.
 
+![image](https://github.com/user-attachments/assets/e13f9f8e-27c1-4857-8b9e-6e76adcb973e)
+
+
 ## Features
 
 1. **Create Flashcards**
    - Users can create their own flashcards by entering a question, four possible answers, the correct answer, and additional information about the question.
+  
+   ![image](https://github.com/user-attachments/assets/68803812-3ddb-4ac0-9e49-88fbb6081b62)
+
 
 2. **Play Flashcards**
    - Users can answer questions displayed on the flashcards.
    - Feedback is provided for each answer (correct or incorrect).
    - Users can navigate between questions using the "Next Question" button.
+  
+   ![image](https://github.com/user-attachments/assets/382bcd62-fbc1-439f-9320-e1c4347a1674)
+
 
 3. **End of Game Summary**
    - At the end of the game, users see a summary of their performance, including the number of correct and incorrect answers.
+
+   ![image](https://github.com/user-attachments/assets/ed9bcd91-39ef-42cc-8957-346aa3cc2381)
+
 
 4. **Navigation Options**
    - Users can go back to the main menu at any time.
